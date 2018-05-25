@@ -4,9 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ImgLibService {
-
+url:any;
   constructor() { }
-  start(){
-    console.log('Hello');
-  }
+  // viewImage(url,height,width){
+  //   this.url=url;
+  //  return this.url;
+  // }
+  // getImage(){
+  //   return this.url;
+  // }
 }

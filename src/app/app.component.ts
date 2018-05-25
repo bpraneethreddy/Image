@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {LoginModule} from 'tsslogin';
+import { LoginModule } from 'tsslogin';
 import { ImgLibModule, ImgLibService } from 'projects/img-lib/src/public_api';
+import { MenuLibModule } from 'tssmenu-lib';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,12 @@ import { ImgLibModule, ImgLibService } from 'projects/img-lib/src/public_api';
 })
 export class AppComponent {
   title = 'app';
-  constructor(private img: ImgLibService){
-    this.img.start();
+  options: any;
+  constructor(private menu: MenuLibModule, private img: ImgLibService) {
+    this.options = {
+      "url": "https://track.zerocodeplatform.com:443/TssTaskTrackerServices/public/employees/Image_35_9002c641-35bc-46a3-84bb-c07ef4aa89f2.jpg",
+      "height": 180,
+      "width": 150
+    };
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImgLibService } from '../public_api';
 
 @Component({
   selector: 'lib-img-lib',
@@ -11,13 +12,10 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class ImgLibComponent implements OnInit {
-
-  start(){
-    console.log('Hello');
+  constructor() { 
   }
-  constructor() { }
 
   ngOnInit() {
   }
-
+  
 }
