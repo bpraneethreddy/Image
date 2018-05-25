@@ -6,12 +6,15 @@ import {LoginModule} from 'tsslogin';
 import {MenuLibModule} from 'tssmenu-lib';
 import { ImgLibModule, ImgLibService, AdminModule } from 'projects/img-lib/src/public_api';
 import {LightboxModule} from 'primeng/lightbox';
+import {DialogModule} from 'primeng/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ButtonModule} from 'primeng/button';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,LoginModule,MenuLibModule,ImgLibModule,AdminModule
+    BrowserModule,LoginModule,MenuLibModule,ImgLibModule,AdminModule,DialogModule,BrowserAnimationsModule,ButtonModule
   ],
   // providers: [ImgLibService],
   bootstrap: [AppComponent]
