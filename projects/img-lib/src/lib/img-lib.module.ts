@@ -2,14 +2,13 @@ import { NgModule } from '@angular/core';
 import { ImgLibComponent } from './img-lib.component';
 
 import {DialogModule} from 'primeng/dialog';
-
 import { ViewModule } from './view/view.module';
-import { ViewComponent } from './view/view/view.component';
-
-
-
-
-
+/**
+ * This is the main module in image library which will contains all the declaration of other modules
+ * 
+ * @export
+ * @class ImgLibModule
+ */
 @NgModule({
   imports: [DialogModule
   ],

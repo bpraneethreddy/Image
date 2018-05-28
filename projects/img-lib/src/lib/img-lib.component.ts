@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ImgLibService } from '../public_api';
 
+/**
+ * This component is for image display
+ * 
+ * @export
+ * @class ImgLibComponent
+ * @implements {OnInit}
+ */
 @Component({
   selector: 'lib-img-lib',
   templateUrl: './img-lib.component.html',
