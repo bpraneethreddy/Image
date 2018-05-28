@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
 import { ImgLibComponent } from './img-lib.component';
-import { AdminModule, ImgLibService } from '../public_api';
-import {LightboxModule} from 'primeng/lightbox';
+
 import {DialogModule} from 'primeng/dialog';
+
+import { ViewModule } from './view/view.module';
+import { ViewComponent } from './view/view/view.component';
+
+
+
+
 
 @NgModule({
   imports: [DialogModule
   ],
   declarations: [ImgLibComponent],
-  exports: [ImgLibComponent],
+  exports: [ViewModule],
 
 })
 export class ImgLibModule { }
